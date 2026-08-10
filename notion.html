@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="notion.css">
+    <script defer src="notion.js"></script>
+
+    <title>To-Do List | Marselo</title> 
+</head>
+
+<body>
+    <section id="inicio" class="inicio">
+
+    </section><!--INICIO-->
+
+    <main>
+        <section id="sidebar" class="sidebar">
+            <div class="topo">
+                <div class="menu">
+                    <h2>Menu</h2>
+                    <img src="icons/menu.png" alt="Menu">
+                </div>
+            
+                <form class="buscar">
+                    <input type="search" placeholder="Buscar">
+                    <img src="icons/search.png" alt="Lupa">
+                </form>
+    
+                <div class="itens">
+                    <h4>Agenda</h4>
+                    <div class="item"> <img src="icons/calendar.png" alt="Calendario"> <p>Calendário</p> </div>
+                    <div class="item"> <img src="icons/tasks.png" alt="Tarefas"> <p>Tarefas</p> </div>
+                
+                    <h4>Listas</h4>
+                    <div class="item"> <img src="icons/add.png" alt="Mais"> <p>Adicionar Nova Lista</p> </div>
+                
+                    <h4>Tags</h4>
+                    <div class="item"> <img src="icons/add.png" alt="Mais"> <p>Adicionar Nova Tag</p> </div>
+                </div>
+            </div>
+    
+            <div class="rodape">
+                <div class="item"> <img src="icons/config.png" alt="Config"> <p>Configurações</p> </div>
+                <div class="item"> <img src="icons/logout.png" alt="Sair"> <p>Sair</p> </div>
+            </div>
+        </section><!--SIDEBAR-->
+    
+        <section id="tasks" class="tasks">
+            <div id="tarefas" class="tarefas"></div>
+
+            <form id="formulario" class="formulario">
+                <label for="titulo">Nome</label>
+                <input type="text" id="titulo" name="titulo">
+
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao">
+
+                <label for="concluida">Concluida</label>
+                <input type="checkbox" id="concluida" class="concluida">
+
+                <label for="data">Data</label>
+                <input type="date" id="data" class="data">
+
+            </form>
+
+            <div id="butoes" class="butoes">
+                <button type="button" id="adicionar" class="adicionar">Adicionar</button>
+                <button type="button" id="remover" class="remover">Remover</button>
+                <button type="button" id="cancelar" class="cancelar">Cancelar</button>  
+            </div>
+        </section><!--TASKS-->
+    </main>
+
+    <section>
+        
+    </section><!--FEEDBACK-->
+</body>
+
+</html>
